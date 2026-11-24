@@ -163,7 +163,7 @@ void GingerbreadGroup::removeGingerbreadMan(Element element) {
     });
 }
 
-std::shared_ptr<GingerbreadMan> GingerbreadMan::getGingerbreadMan(int index) {
+std::shared_ptr<GingerbreadMan> GingerbreadGroup::getGingerbreadMan(int index) {
     return queue.at(static_cast<std::size_t>(index));
 }
 

@@ -2,7 +2,7 @@
 
 
 SeltzerCookie::SeltzerCookie()
-    :BackGingerbreadMan("Millennial Tree Cookie",Element::Water,200,450,700,0.7f,2,3){
+    :BackGingerbreadMan("Seltzer Cookie",Element::Water,200,450,700,0.7f,2,3){
 }
 
 

@@ -2,7 +2,7 @@
 
 
 ChiliPepperCookie::ChiliPepperCookie()
-    :MiddleGingerbreadMan("Chili Pepper Cookie",Element::Fire,200,100,900){
+    :MiddleGingerbreadMan("Chili Pepper Cookie",Element::Fire,200,100,900,0.8f,7,4){
 }
 
 void ChiliPepperCookie::levelUp(){
