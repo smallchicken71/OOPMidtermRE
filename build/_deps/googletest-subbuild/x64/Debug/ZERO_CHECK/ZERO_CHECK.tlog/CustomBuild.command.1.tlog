@@ -1,0 +1,10 @@
+^C:\USERS\CXIAO\ONEDRIVE\DESKTOP\C++\2026F_MIDTERMRESIT\BUILD\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\BB32991702CE74EE6BD50FE54FBB64EB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cxiao/OneDrive/Desktop/c++/2026F_MidtermResit/build/_deps/googletest-subbuild -BC:/Users/cxiao/OneDrive/Desktop/c++/2026F_MidtermResit/build/_deps/googletest-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/cxiao/OneDrive/Desktop/c++/2026F_MidtermResit/build/_deps/googletest-subbuild/googletest-populate.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

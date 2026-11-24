@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\7d747e8ebee9fc57f7aff9b6cff72441\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\fd95d31f20d040cb43beee01c57ca3ef\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\bb32991702ce74ee6bd50fe54fbb64eb\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\cxiao\OneDrive\Desktop\c++\2026F_MidtermResit\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3C28B91F-9355-301E-AF55-A782F39D8E2C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
