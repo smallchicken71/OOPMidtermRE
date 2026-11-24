@@ -6,6 +6,7 @@ ChiliPepperCookie::ChiliPepperCookie()
 }
 
 void ChiliPepperCookie::levelUp(){
+    ++level;
     damage+=200;
     defense+=100;
     health+=100;

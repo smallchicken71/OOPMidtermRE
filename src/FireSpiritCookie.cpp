@@ -5,6 +5,7 @@ FireSpiritCookie::FireSpiritCookie()
 }
 
 void FireSpiritCookie::levelUp(){
+    ++level;
     damage+=100;
     critDamage+=0.1f;
     health+=20;

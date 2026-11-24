@@ -5,6 +5,7 @@ SilverbellCookie::SilverbellCookie()
 }
 
 void SilverbellCookie::levelUp(){
+    ++level;
     damage+=150;
     defense+=50;
     health+=150;

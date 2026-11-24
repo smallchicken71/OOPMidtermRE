@@ -6,6 +6,7 @@ SeaFairyCookie::SeaFairyCookie()
 }
 
 void SeaFairyCookie::levelUp(){
+    ++level;
     damage+=100;
     defense+=150;
     health+=160;

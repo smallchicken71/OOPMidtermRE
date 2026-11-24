@@ -5,6 +5,7 @@ BurningSpiceCookie::BurningSpiceCookie()
 }
 
 void BurningSpiceCookie::levelUp(){
+    ++level;
     damage+=250;
     critDamage+=0.5f;
     health+=220;

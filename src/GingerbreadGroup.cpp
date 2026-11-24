@@ -94,3 +94,77 @@ void GingerbreadGroup::addGingerbreadMan(std::shared_ptr<GingerbreadMan> gingerb
 
     const int sectionSize = maxSize / 3;
     const int positionLimit = position == Position::Back ? maxSize - 2 * sectionSize : sectionSize;
+    if (positionCount >= positionLimit) {
+        throw std::invalid_argument("Group position is full");
+    }
+    queue.push_back(std::move(gingerbreadMan));
+}
+
+void GingerbreadGroup::replaceGingerbreadMan(
+    int index, std::shared_ptr<GingerbreadMan> gingerbreadMan) {
+    auto& current = queue.at(static_cast<std::size_t>(index));
+    if (!gingerbreadMan) {
+        throw std::invalid_argument("Group member cannot be null");
+    }
+    if (gingerbreadMan->getPosition() != current->getPosition()) {
+        throw std::invalid_argument("Replacement member must have the same position");
+    }
+
+    const auto name = gingerbreadMan->getName();
+    for (const auto& member : queue) {
+        if (member != current && member->getName() == name) {
+            throw std::invalid_argument("Group member name already exists");
+        }
+    }
+    current = std::move(gingerbreadMan);
+}
+
+void GingerbreadGroup::sortByHealth() {
+    std::stable_sort(queue.begin(), queue.end(), [](const auto& left, const auto& right) {
+        return left->getHealth() > right->getHealth();
+    });
+}
+
+void GingerbreadGroup::sortByDamage() {
+    std::stable_sort(queue.begin(), queue.end(), [](const auto& left, const auto& right) {
+        return left->getDamage() > right->getDamage();
+    });
+}
+
+void GingerbreadGroup::sortByDefense() {
+    std::stable_sort(queue.begin(), queue.end(), [](const auto& left, const auto& right) {
+        return left->getDefense() > right->getDefense();
+    });
+}
+
+int GingerbreadGroup::countCombatPower() {
+    int power = 0;
+    for (const auto& member : queue) {
+        power += member->getHealth() + member->getDefense() + member->getDamage();
+    }
+    return power;
+}
+
+void GingerbreadGroup::removeDeadGingerbreadMan() {
+    removeMembers(queue, currIndex, [](const auto& member) {
+        return member->getCurrHealth() <= 0;
+    });
+}
+
+void GingerbreadGroup::removeGingerbreadMan(std::string name) {
+    removeMembers(queue, currIndex, [&name](const auto& member) {
+        return member->getName() == name;
+    });
+}
+
+void GingerbreadGroup::removeGingerbreadMan(Element element) {
+    removeMembers(queue, currIndex, [element](const auto& member) {
+        return member->getElementType() == element;
+    });
+}
+
+std::shared_ptr<GingerbreadMan> GingerbreadGroup::getGingerbreadMan(int index) {
+    return queue.at(static_cast<std::size_t>(index));
+}
+
+
