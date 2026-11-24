@@ -1,0 +1,14 @@
+#include "MiddleGingerbreadMan.hpp"
+
+MiddleGingerbreadMan::MiddleGingerbreadMan(
+    std::string name, Element type, int damage, int defense, int health,
+    float critDamage, int maxCritCount, int maxDodgeCount)
+    : GingerbreadMan(name, type, Position::Back, damage, defense,
+                     health, critDamage, maxCritCount, maxDodgeCount) {
+}
+
+void MiddleGingerbreadMan::criticalBuff() {
+    if (critDamage<1) {
+        critDamage+=0.1f;
+    }
+}
